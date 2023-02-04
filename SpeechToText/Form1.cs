@@ -94,5 +94,10 @@ namespace SpeechToText
             response.Close();
             
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Для начала нажмите кнопку Записи, затем кнопку Распознать, для получения произнесенного текста");
+        }
     }
 }
