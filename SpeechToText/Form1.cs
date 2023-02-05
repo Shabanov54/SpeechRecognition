@@ -88,7 +88,7 @@ namespace SpeechToText
             string strtrs = reader.ReadToEnd();
             var rg = new Regex(@"transcript" + '"' + ":" + '"' + "([A-Z, А-Я, a-z,а-я, ,0-9]*)");
             var result = rg.Match(strtrs).Groups[1].Value;
-            label1.Text = result;
+            label3.Text = result;
             
             reader.Close();
             response.Close();
